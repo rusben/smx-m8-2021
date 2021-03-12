@@ -1,0 +1,8 @@
+#defcon { 
+     animation: alert 5s linear 2s infinite alternate;
+}
+
+@keyframes alert {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
