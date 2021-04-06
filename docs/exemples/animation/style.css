@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+
+#viewport {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  background-color: red;
+}
+
+#drac {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* height: 100px;
+  width: 100px; */
+  background-color: red;
+  /* border: thin solid black; */
+  animation: movimiento 5s linear 0s infinite alternate, cambiodefondo 5s linear 2s infinite alternate;
+
+}
+
+#ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border: thick solid green;
+  background-color: green;
+  border-radius: 50%;
+  animation: animobola 10s linear 0s infinite backwards;
+}
+
+
+@keyframes animobola {
+  25% { width: 200px; height: 200px; }
+  50% { background-color: yellow; }
+  100% { top: 500px; left: 500px;  }
+}
+@keyframes cambiodefondo {
+  from  { background-color: green; }
+  to { background-color: yellow;}
+}
+
+@keyframes movimiento {
+  0% {   left: 0; right: 200px; }
+  25% {   top: 0; left: 200px; }
+  50% {   right: 200px; bottom: 0; }
+  100% { top: 200px; left: 0; transform: rotateY(180deg);}
+}
