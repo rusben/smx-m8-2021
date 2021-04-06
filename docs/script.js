@@ -5,7 +5,8 @@ var lliurament1 = new Date("03/26/2021");
 var lliurament2 = new Date("04/30/2021");
 var lliurament3 = new Date("05/28/2021");
 
-var df1= Math.abs(lliurament1-today);
+//var df1= Math.abs(lliurament1-today);
+var df1= lliurament1-today;
 var df2= Math.abs(lliurament2-today);
 var df3= Math.abs(lliurament3-today);
 
