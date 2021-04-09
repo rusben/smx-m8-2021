@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  color: black;
+  margin: 0;
+}
+
+
+/*
+Comentario:
+#header { border: thin solid black; }
+*/
+
+/*
+  005891
+  0082d6
+  0090eb
+  009df3
+  00a9f5
+  00b4f7
+*/
+
+#main-image {
+  width: 600px;
+  border-radius: 50px;
+}
+
+#main-image-wrapper {
+  text-align: center;
+}
+
+#menu {
+
+  list-style: none;
+  border: thin solid #00b4f7;
+  padding: 0;
+  background-color: #0082d6;
+  padding: 5px;
+}
+
+#menu > li {
+    border: thin solid #0090eb;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #009df3;
+
+}
+
+#menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#menu > li:hover {
+  background-color: #005891;
+}
+
+
+
+.grid-container {
+  /* border: thin solid black; */
+  display: grid;
+  grid-template-areas: 'header header header header header header'
+                       'right right content content content content'
+                       'footer footer footer footer footer footer';
+  grid-gap: 10px;
+}
+
+#right {
+  /* border: thin solid #00b4f7; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#card > img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+#footer {
+  background-color: #005891;
+  padding: 10px;
+  color: white;
+  text-align: right;
+}
+
+
+
+/* Definición de grid-areas */
+#header { grid-area: header; }
+#right { grid-area: right; }
+#content {
+  grid-area: content;
+}
+#footer { grid-area: footer; }
+
+.box {
+ /* border: thin solid black; */
+}
