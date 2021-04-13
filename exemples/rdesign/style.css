@@ -28,8 +28,8 @@ a:hover {
   opacity: .6;
 }
 
-/* Styles for the hero image */
-.hero {
+/* Styles for the banner image */
+.banner {
   /* Photo by mnm.all on Unsplash */
   background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
   background-size: cover;
@@ -40,42 +40,43 @@ a:hover {
   align-items: center;
 }
 
-.hero > * {
+.banner > * {
   color: white;
 }
 
-.hero > h1 {
+.banner > h1 {
   font-size: 4rem;
   padding-bottom: 1rem;
 }
 
-.hero > article > p {
+.banner > article > p {
   font-size: 1.5rem;
   font-weight: 200;
 }
 
-.hero > article > a {
+.banner > article > a {
   padding: 1rem;
   margin-top: .75rem;
 }
 
-/* breweries styles */
-.breweries {
+/* tarjeta styles */
+.tarjeta {
   padding: 2rem;
 }
 
-.breweries > ul {
+.tarjeta > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
 }
 
-.breweries > ul > li {
+.tarjeta > ul > li {
   border: 1px solid #E2E2E2;
   border-radius: .5rem;
+  list-style-type: none;
 }
 
-.breweries > ul > li > figure {
+.tarjeta > ul > li > figure {
   max-height: 220px;
   overflow: hidden;
   border-top-left-radius: .5rem;
@@ -83,31 +84,31 @@ a:hover {
   position: relative;
 }
 
-.breweries > ul > li > figure > img {
+.tarjeta > ul > li > figure > img {
   width: 100%;
 }
 
-.breweries > ul > li > figure > figcaption {
+.tarjeta > ul > li > figure > figcaption {
   position: absolute;
   bottom: 0;
   background-color: rgba(0,0,0,.7);
   width: 100%;
 }
 
-.breweries > ul > li > figure > figcaption > h3 {
+.tarjeta > ul > li > figure > figcaption > h3 {
   color: white;
   padding: .75rem;
   font-size: 1.25rem;
 }
 
-.breweries > ul > li > p {
+.tarjeta > ul > li > p {
   font-size: 1rem;
   line-height: 1.5;
   padding: 1rem .75rem;
   color: #666666;
 }
 
-.breweries > ul > li > a {
+.tarjeta > ul > li > a {
   padding: .5rem 1rem;
   margin: .5rem;
 }
@@ -119,4 +120,41 @@ footer {
   color: white;
   text-align: center;
   font-size: .75rem;
+}
+
+/* menu styles */
+#menu {
+
+  list-style: none;
+  border: thin solid #00b4f7;
+  padding: 0;
+  background-color: #0082d6;
+  padding: 5px;
+}
+
+#menu > li {
+    border: thin solid #0090eb;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #009df3;
+
+}
+
+#menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#menu > li:hover {
+  background-color: #005891;
+}
+
+@media only screen and (max-width: 768px) {
+  #menu > li {
+      width: 100%;
+  }
 }
