@@ -28,6 +28,22 @@ a:hover {
   opacity: .6;
 }
 
+.container {
+  display: grid;
+  column-count:3;
+
+  color: orange;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns:  1fr 4fr 1fr;
+
+}
+
+.sidebar {
+  border-right: thin solid orange;
+}
+
+
 /* Styles for the banner image */
 .banner {
   /* Photo by mnm.all on Unsplash */
@@ -157,4 +173,9 @@ footer {
   #menu > li {
       width: 100%;
   }
+
+  .container {
+    display: inline;
+  }
+
 }
