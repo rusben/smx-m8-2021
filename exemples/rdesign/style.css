@@ -31,8 +31,6 @@ a:hover {
 .container {
   display: grid;
   column-count:3;
-
-  color: orange;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-columns:  1fr 4fr 1fr;
@@ -40,6 +38,14 @@ a:hover {
 }
 
 .sidebar {
+  color:orange;
+}
+
+.sdb-right {
+  border-left: thin solid orange;
+}
+
+.sdb-left {
   border-right: thin solid orange;
 }
 
