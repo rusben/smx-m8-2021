@@ -184,4 +184,12 @@ footer {
     display: inline;
   }
 
+  .tarjeta {
+    padding: 1rem;
+  }
+
+  .tarjeta > ul {
+    padding: 0;
+  }
+
 }
