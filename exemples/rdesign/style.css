@@ -175,6 +175,40 @@ footer {
   background-color: #005891;
 }
 
+.services {
+  padding: 1rem;
+}
+
+.services > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
+  grid-gap: 1rem;
+  padding-left: 0;
+}
+
+.services > ul > li {
+  list-style: none;
+  border: thin solid lightgray;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #fff7ec;
+  box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+}
+
+.services > ul > li > figure > img {
+  width: 100%;
+  padding: 0.5rem;
+  /* border: thin solid lightgrey; */
+  /* border-radius: 2.5rem 5rem 2.5rem; */
+}
+
+.services  > ul > li > a {
+  padding: 1rem;
+  float: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
   #menu > li {
       width: 100%;
