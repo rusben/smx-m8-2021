@@ -206,7 +206,14 @@ footer {
   padding: 1rem;
   float: right;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.services  > ul > li > .wstone {
+  color: black;
+  background-color: white;
 }
 
 @media only screen and (max-width: 768px) {
