@@ -1,6 +1,11 @@
 /* Typography imported from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
 
+* {
+  position: relative;
+  z-index: -1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
@@ -34,7 +39,6 @@ a:hover {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-columns:  1fr 4fr 1fr;
-
 }
 
 .sidebar {
@@ -48,7 +52,6 @@ a:hover {
 .sdb-left {
   border-right: thin solid orange;
 }
-
 
 /* Styles for the banner image */
 .banner {
@@ -144,14 +147,36 @@ footer {
   font-size: .75rem;
 }
 
+/* sticky */
+
+.sticky {
+	background-color: #ffffff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 100;
+}
+
+.hidden { display: none; }
+.shown { display: block; }
+
+/* mobile selector */
+#mobile-selector {
+  display: none;
+  text-align: right;
+  padding: 0.25rem;
+}
+
 /* menu styles */
 #menu {
-
+  display: block;
   list-style: none;
   border: thin solid #00b4f7;
   padding: 0;
   background-color: #0082d6;
   padding: 5px;
+  position: relative;
+  z-index: 10 !important;
 }
 
 #menu > li {
@@ -217,6 +242,11 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+  #menu {
+    display: none;
+  }
+
   #menu > li {
       width: 100%;
   }
@@ -231,6 +261,11 @@ footer {
 
   .tarjeta > ul {
     padding: 0;
+  }
+
+  /* mobile selector */
+  #mobile-selector {
+    display: block;
   }
 
 }
